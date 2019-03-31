@@ -4,8 +4,11 @@ spring:
     - dev
 
 
+server:
+ port: 7001
+
 spring:
-  profiles: test
+  profiles: dev
   application:
     name: microservicecloud-config-eureka-client
 
@@ -20,9 +23,11 @@ eureka:
        defaultZone: http://eureka7001.com:7001/eureka/
 
 ---
-   
+server:
+ port: 7001
+
 spring:
-  profiles: dev
+  profiles: test
   application:
     name: microservicecloud-config-eureka-client
 
