@@ -13,6 +13,13 @@ eureka:
   client:
     service-url: 
         defaultZone: http://eureka-dev.com:7001/eureka/
+eureka:
+ instance:
+   hostname: eureka7001.com
+ client:
+   register-with-eureka: false      #当前的eureka-server 自己不注册进服务列表中去
+   fetch-registry: false      #不通过eureka获取注册信息
+  
 ---
 server:
  port: 8202
@@ -26,3 +33,12 @@ eureka:
    client:
       service-url:
           defaultZone: http://eureka-dev.com:7001/eureka/
+
+
+eureka:
+ instance:
+   hostname: eureka7001.com
+ client:
+   register-with-eureka: false      #当前的eureka-server 自己不注册进服务列表中去
+   fetch-registry: false      #不通过eureka获取注册信息
+  
